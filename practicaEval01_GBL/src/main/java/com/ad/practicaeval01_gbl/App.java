@@ -20,7 +20,7 @@ public class App {
     	Utilities.readCsv(departamentos, empleados);
     	Connection conexion= Utilities.conexionPostgres();
     	Utilities.crearTablas(conexion);
-    	//Utilities.inserts(conexion, departamentos, empleados);
+    	Utilities.inserts(conexion, departamentos, empleados);
     	Utilities.consultas(conexion);
     	Utilities.generarXml(departamentos, empleados);
     	
